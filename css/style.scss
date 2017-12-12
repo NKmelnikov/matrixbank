@@ -1,0 +1,54 @@
+body{
+  background: url("/img/bg.png");
+}
+.app{
+  margin:0 15% 0 15%;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  border-bottom:3px solid white;
+  margin: 0 60px 0 60px;
+
+  .logo{
+    width:250px;
+    height:64px;
+  }
+
+  .link-box{
+
+    a{
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+}
+main{
+  font-family: 'Montserrat', sans-serif;
+  p{
+
+    font-weight: 100;
+    font-size: 28px;
+    color: #a5a5a5;
+    margin: 70px 160px 0 160px;
+
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 16px 70px;
+    border: 2px solid white;
+    margin: 50px 0 0 160px;
+    display: inline-block;
+
+  }
+}
