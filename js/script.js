@@ -1,20 +1,32 @@
-(function ($) {
-  $.each(['show', 'hide'], function (i, ev) {
-    var el = $.fn[ev];
-    $.fn[ev] = function () {
-      this.trigger(ev);
-      return el.apply(this, arguments);
-    };
-  });
-})(jQuery);
-
-
+$( function() {
+  $( "#tabs" ).tabs();
+} );
 
 var o = {
   S: { //sections
     one:$('#one'),
-    two:$('#two')
+    two:$('#two'),
+    three:$('#three'),
+    four:$('#four'),
+    five:$('#five'),
+    six:$('#six'),
+    seven:$('#seven')
+  },
+  h:{
+    l:$( '.link-box a'),
+    h:$( '.link-box .home')
   }
 };
 
+var hsh = window.location.hash;
+var route = hsh.substring(2, hsh.length);
 
+o.h.l.removeClass('active');
+
+o.h.l.each(function(){
+
+  if ($(this).hasClass(route)) {
+    $(this).addClass('active');
+  }
+
+});
