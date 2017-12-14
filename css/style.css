@@ -1,5 +1,6 @@
 body {
-  background: url("/img/bg.png"); }
+  background: black;
+  font-family: 'Montserrat', sans-serif; }
 
 .app {
   margin: 0 15% 0 15%; }
@@ -15,28 +16,74 @@ header {
     width: 250px;
     height: 64px; }
   header .link-box a {
-    font-family: 'Montserrat', sans-serif;
     color: white;
     text-decoration: none;
     margin-right: 20px;
     font-weight: 500;
     font-size: 14px; }
 
-main {
-  font-family: 'Montserrat', sans-serif; }
-  main p {
-    font-weight: 100;
-    font-size: 28px;
-    color: #a5a5a5;
-    margin: 70px 160px 0 160px; }
-  main a {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
-    padding: 16px 70px;
-    border: 2px solid white;
-    margin: 50px 0 0 160px;
-    display: inline-block; }
+main #one p {
+  font-weight: 100;
+  font-size: 28px;
+  color: #a5a5a5;
+  margin: 70px 160px 0 160px; }
+main #one a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 16px 70px;
+  border: 2px solid white;
+  margin: 50px 0 0 160px;
+  display: inline-block; }
+main #two {
+  display: none;
+  justify-content: center; }
+  main #two .team-member {
+    width: 200px;
+    height: 450px;
+    margin: 20px 20px 0;
+    text-align: left;
+    color: white; }
+    main #two .team-member .img-box {
+      border: 8px solid #E8E8E8;
+      width: 180px;
+      height: 180px;
+      box-shadow: 8px 8px 0px 1px #B0B0B0; }
+      main #two .team-member .img-box img {
+        width: 180px;
+        height: 180px; }
+    main #two .team-member .name-text {
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 25px 0 0 8px; }
+    main #two .team-member .desc1-text {
+      font-size: 14px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      margin: 15px 0 0 8px; }
+    main #two .team-member .desc2-text {
+      font-size: 14px;
+      font-weight: lighter;
+      margin: 15px 0 0 8px;
+      color: #a5a5a5; }
+    main #two .team-member .contacts {
+      margin: 25px 0 0 8px;
+      border-top: 1px solid white;
+      display: flex;
+      flex-direction: column;
+      font-size: 14px; }
+      main #two .team-member .contacts span {
+        display: inline-block;
+        margin-top: 10px; }
+    main #two .team-member .c4 {
+      margin-top: 61px; }
+    main #two .team-member .c3 {
+      margin-top: 78px; }
+    main #two .team-member .c2 {
+      margin-top: 43px; }
+    main #two .team-member .c1 {
+      margin-top: 61px; }
 
 /*# sourceMappingURL=style.css.map */
