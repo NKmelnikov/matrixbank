@@ -20,7 +20,7 @@ Path.map("#/").to(function(){
 
 Path.map("#/team").to(function(){
 
-  $('body').css('background','#131212');
+  $('body').css('background', 'url("img/bg.png")');
 
   o.S.one.hide();
   o.S.three.hide();
@@ -38,7 +38,7 @@ Path.map("#/team").to(function(){
 
 Path.map("#/services").to(function(){
 
-  $('body').css('background','#131212');
+  $('body').css('background','url("img/bg.png")');
 
 
   o.S.one.hide();
@@ -57,7 +57,7 @@ Path.map("#/services").to(function(){
 
 Path.map("#/subsidiaries").to(function(){
 
-  $('body').css('background','#131212');
+  $('body').css('background','url("img/bg.png")');
 
 
   o.S.one.hide();
@@ -76,7 +76,7 @@ Path.map("#/subsidiaries").to(function(){
 
 Path.map("#/clients").to(function(){
 
-  $('body').css('background','#131212');
+  $('body').css('background', 'url("img/bg.png")');
 
 
   o.S.one.hide();
@@ -114,8 +114,9 @@ Path.map("#/blog").to(function(){
 
 Path.map("#/contacts").to(function(){
 
-  $('body').css('background','#131212');
+  $('body').css('background', '#131212');
 
+	$('body').css('background', 'url("img/bg.png")');
 
   o.S.one.hide();
   o.S.two.hide();

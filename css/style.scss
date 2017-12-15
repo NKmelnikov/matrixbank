@@ -1,21 +1,49 @@
+
 body{
-  background: #131212;
+  background:url("/img/bg.png");
   font-family: 'Montserrat', sans-serif;
 }
 .app{
   margin:0 15% 0 15%;
+  border: 20px solid #022737;
+  padding: 20px;
+  min-height:65vh;
 }
+
+.header-mobile, .burger-box {
+  display: none;
+}
+
+
+
 header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 120px;
+  height: 90px;
   border-bottom:3px solid white;
   margin: 0 60px 0 60px;
 
-  .logo{
-    width:250px;
-    height:64px;
+  .logo-box{
+    display: flex;
+    flex-direction: column;
+
+    span{
+      display: inline-block;
+    }
+    .mb{
+      font-size: 28px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: white;
+    }
+    .cib{
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: #A0A0A2;
+
+    }
   }
 
   .link-box{
@@ -28,7 +56,6 @@ header{
       font-size: 14px;
 
       &.active{
-        width:10px;
         padding-bottom: 7px;
         position: relative;
 
@@ -46,11 +73,13 @@ header{
 main{
   #one{
     display: none;
+
     p{
       font-weight: 100;
-      font-size: 28px;
+      font-size: 20px;
+      line-height:40px;
       color: #a5a5a5;
-      margin: 70px 160px 0 160px;
+      margin: 50px 160px 0 160px;
     }
 
     a{
@@ -58,9 +87,9 @@ main{
       color: white;
       font-weight: 700;
       font-size: 20px;
-      padding: 16px 70px;
+      padding: 15px 60px;
       border: 2px solid white;
-      margin: 50px 0 0 160px;
+      margin: 30px 0 0 160px;
       display: inline-block;
       transition: .2s ease-in-out;
 
@@ -75,84 +104,91 @@ main{
     display: none;
     justify-content: center;
 
+
     .team-member{
 
-      width: 200px;
+      width: 175px;
       height: 450px;
       margin: 20px 20px 0;
       text-align: left;
       color:white;
+      display: flex;
+      flex-direction: column;
 
       .img-box{
         border: 8px solid #E8E8E8;
-        width:180px;
-        height:180px;
-        box-shadow: 8px 8px 0px 1px #B0B0B0;
+        width:150px;
+        height:150px;
+        box-shadow: 5px 5px 0px 1px #B0B0B0;
 
         img{
-          width:180px;
-          height:180px;
+          width:150px;
+          height:150px;
 
         }
 
       }
-      .name-text{
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 25px 0 0 8px;
-      }
-      .desc1-text{
-        font-size: 14px;
-        font-weight: lighter;
-        text-transform: uppercase;
-        margin: 15px 0 0 8px;
-      }
-      .desc2-text{
-        font-size: 14px;
-        font-weight: lighter;
-        margin: 15px 0 0 8px;
-        color: #a5a5a5;
-      }
-      
-      .contacts{
-        margin: 25px 0 0 8px;
-        border-top: 1px solid white;
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
+      .content-box{
 
-        a{
-          color: white;
-          transition: .1s ease;
-
-          &:hover{
-            transform:scale(1.03);
-          }
-          &:active{
-            transform:scale(0.9);
-          }
-          span{
-            display: inline-block;
-            margin-top:10px;
-          }
+        .name-text{
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 20px 0 0 5px;
+        }
+        .desc1-text{
+          font-size: 12px;
+          font-weight: lighter;
+          text-transform: uppercase;
+          margin: 5px 0 0 5px;
+        }
+        .desc2-text{
+          font-size: 12px;
+          font-weight: lighter;
+          margin: 5px 0 0 5px;
+          color: #a5a5a5;
         }
 
+        .contacts{
+          margin: 15px 0 0 5px;
+          border-top: 1px solid white;
+          display: flex;
+          flex-direction: column;
+          font-size: 12px;
 
-      }
-      .c4 {
-        margin-top: 61px;
-      }
-      .c3 {
-        margin-top: 78px;
-      }
-      .c2 {
-        margin-top: 43px;
-      }
-      .c1 {
-        margin-top: 61px;
+          a{
+            color: white;
+            transition: .1s ease;
 
+            &:hover{
+              transform:scale(1.03);
+            }
+            &:active{
+              transform:scale(0.9);
+            }
+            span{
+              display: inline-block;
+              margin-top:10px;
+            }
+          }
+
+
+        }
+        .c4 {
+          margin-top: 45px;
+        }
+        .c3 {
+          margin-top: 57px;
+        }
+        .c2 {
+          margin-top: 30px;
+        }
+        .c1 {
+          margin-top: 45px;
+
+        }
       }
+
     }
   }
 
@@ -162,22 +198,33 @@ main{
 
     #tabs{
 
+      margin: 2% 60px 0 60px;
+      background: #131212;
+
       ul{
 
         display: flex;
         justify-content: center;
         list-style: none;
         padding-left: 0;
+        flex-wrap: wrap;
+        margin: 0 10% 0 10%;
+
 
         li{
-          width: 270px;
-          height: 180px;
+          //width: 220px;
+          //height: 150px;
+          width:25%;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           text-align: center;
           outline: none;
+          &:hover{
+            background: #333333;
+          }
+          border-bottom: 2px solid transparent;
 
           a{
             text-decoration: none;
@@ -191,27 +238,31 @@ main{
             text-align: center;
             outline: none;
             border: none;
+            width:100%;
+            height:100%;
+            -webkit-tap-highlight-color: transparent;
+
 
 
             .sm-icon{
-              width:80px;
-              height:80px;
+              width:60px;
+              height:60px;
               position:relative;
 
             }
             .sm-icon1 {
 
               background: #B4B4B4;
-              box-shadow: 10px 10px 0 1px #777777;
+              box-shadow: 7px 7px 0 1px #777777;
               display: flex;
               justify-content: center;
               align-items: center;
               text-align: center;
 
               .pie{
-                width:50px;
-                height:50px;
-                border-radius: 50px;
+                width:40px;
+                height:40px;
+                border-radius: 40px;
                 background-color: #5E5E5E;
                 background-image:
                         linear-gradient(180deg, transparent 50%, white 50%),
@@ -223,9 +274,9 @@ main{
 
               .circ{
                 background: white;
-                border-radius: 50px;
-                width:50px;
-                height:50px;
+                border-radius: 40px;
+                width:40px;
+                height:40px;
                 position: absolute;
               }
               .circle1{
@@ -235,13 +286,13 @@ main{
                 z-index: 3;
               }
               .circle2{
-                top:40px; left: -5px;
+                top:30px; left: -5px;
                 background: white;
                 z-index: 2;
 
               }
               .circle3{
-                top:40px; right: -5px;
+                top:30px; right: -5px;
                 background: #9F9F9F;
                 z-index: 1;
 
@@ -250,7 +301,7 @@ main{
 
             .sm-icon3{
               background: white;
-              box-shadow: 10px 10px 0 1px #777777;
+              box-shadow: 7px 7px 0 1px #777777;
               display: flex;
               flex-direction: column;
               justify-content: flex-start;
@@ -268,7 +319,7 @@ main{
                   font-size: 55px;
                   color: #777777;
                   position: absolute;
-                  top:-125%;
+                  top:-180%;
                 }
 
                 &:before{
@@ -298,18 +349,18 @@ main{
                   position: absolute;
                   left:0; right: 0; top:7px;
                   margin: 0 auto;
-                  width: 30px;
-                  height: 30px;
+                  width: 20px;
+                  height: 20px;
                   border-radius: 30px;
                   background: #ABABAB;
 
                 }
                 &:before,&:after{
                   content: '.';
-                  font-size: 55px;
+                  font-size: 40px;
                   color: #ABABAB;
                   position: absolute;
-                  top:-50%;
+                  top: -52%;
                 }
 
                 &:before{
@@ -349,10 +400,11 @@ main{
         text-align: justify;
         height: 300px;
         border:1px solid #353535;
-        margin: -17px 125px 0 125px;
+        margin: 0 10% 0 10%;
         display: flex;
         justify-content: center;
         align-items: center;
+
 
       .icon-container{
 
@@ -524,7 +576,6 @@ main{
 
     .box{
       width: 400px;
-      height:600px;
 
       .head{
         display: flex;
@@ -641,21 +692,39 @@ main{
       .blog{
         color: #535353;
       }
+      .arrow2{
+        display: none;
+      }
+      .article{
+        color: #535353;
+        font-size: 12px;
+        text-transform: none;
+      }
     }
 
     .wrapper{
       display: flex;
-      justify-content: center;
+      justify-content:center;
+
 
       &__article{
 
-        width:42%;
+        width:56%;
         margin-right: 40px;
 
         article{
           margin-top: 20px;
           border: 3px solid #727272;
           padding: 20px;
+
+          &.read{
+
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+
           h2{
             color:white;
             margin-top: 0;
@@ -664,6 +733,7 @@ main{
             color: #858585;
             font-size: 14px;
             font-weight: 100;
+            text-align: left;
           }
         }
       }
@@ -741,12 +811,13 @@ main{
       justify-content: center;
       align-items: center;
       margin-top: 30px;
+      flex-wrap: wrap;
 
       .link{
         display: flex;
         color: white;
         text-decoration: none;
-        margin-right: 35px;
+        margin: 0 35px 10px 0;
 
         &__img{
           border: 2px solid #2B2B2B;
@@ -761,21 +832,4 @@ main{
     }
 
   }
-}
-
-
-
-@media (max-width:1670px){
-
-  .app{
-    margin:0;
-  }
-
-}
-@media (max-width:1367px){
-
-  main #three #tabs .tab {
-    margin: -17px 135px 0 135px;
-  }
-
 }
