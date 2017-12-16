@@ -92,3 +92,7 @@ $(window).on("load", function() {
 window.addEventListener("orientationchange", function() {
   $('.cloak').fadeOut( "slow");
 }, false);
+
+window.onresize = function(event) {
+  $('.cloak').fadeOut( "slow");
+};
