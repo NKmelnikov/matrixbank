@@ -75,17 +75,20 @@ $('.wrapper article').click(function () {
 	if($('article').hasClass('read')){
 		$('.panel .article').show();
 		$('.panel .arrow2').show();
+    $('.panel .blog').css('color','white');
 	} else {
 		$('.panel .article').hide();
 		$('.panel .arrow2').hide();
+    $('.panel .blog').css('color','#535353');
 	}
 
 });
 
-// $('.tab-sector').each(function(){
-// 	console.log($(this));
-// });
-// $('.tab-sector').click(function () {
-// 	console.log($(this));
-// 	$(this).children('a').trigger('click');
-// });
+
+$(window).on("load", function() {
+  $('.cloak').fadeOut( "slow");
+});
+
+window.addEventListener("orientationchange", function() {
+  $('.cloak').fadeOut( "slow");
+}, false);
