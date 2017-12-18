@@ -280,9 +280,14 @@ main{
   #three{
     display:none;
     color:white;
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     #tabs{
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       margin: 2% 60px 0 60px;
       min-width:1025px;
 
@@ -492,7 +497,7 @@ main{
         background: #131212;
         text-align: justify;
         height: 220px;
-        min-width: 675px;
+        width: 675px;
         border:1px solid #353535;
         margin: 0 18% 0 18%;
         display: flex;
