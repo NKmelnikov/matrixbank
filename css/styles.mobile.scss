@@ -230,24 +230,44 @@ header{
     }
 
     #three{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       #tabs{
-        margin: 2% 10% 0 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       width:768px;
+        min-width: 0;
+        //margin: 2% 10% 0 10%;
+        margin:0;
         ul{
-          margin-bottom:0;
+          margin:0;
+          width:768px;
+          min-width: 0;
+
           li{
-            width: 198px;
-            height: 150px;
+            //width: 198px;
+            //height: 150px;
             a{
               .sm-icon{
-                width:60px;
-                height:60px;
-                position:relative;
+                //width:60px;
+                //height:60px;
+                //position:relative;
               }
             }
           }
         }
-
+        .desc-tab{
+        width:728px;
+          min-width: 0;
+        }
         .tab{
+         width:728px;
+          min-width: 0;
+
 
           margin: 0;
 
@@ -260,6 +280,8 @@ header{
           }
           .text{
             font-size: 14px;
+            min-width:0;
+            padding-right: 20px;
 
           }
 
@@ -414,9 +436,11 @@ header{
     }
 
     #three{
-      #tabs{
 
-        margin: 2% 10% 0 10%;
+      #tabs{
+        min-width: 0;
+        width: 400px;
+        margin: 0 10% 0 10%;
 
         ul{
           display: none;
@@ -431,6 +455,8 @@ header{
         .mobile-tabs{
           display: flex;
           flex-direction: column;
+          min-width: 0;
+          width: 400px;
         }
 
         .tab{
@@ -438,6 +464,11 @@ header{
           margin: 0;
           height:200px;
           text-align: left;
+          min-width: 0;
+          width: 400px;
+          border: 1px solid transparent;
+          border-top: 1px solid #353535;
+          border-bottom: 1px solid #353535;
 
           .txt-box{
             margin-left: 10px;
@@ -445,10 +476,10 @@ header{
 
           }
             .title{
-              font-size: 14px;
+              font-size: 16px;
             }
             .text{
-              font-size: 10px;
+              font-size: 14px;
               color: #a9a9a9;
 
             }
@@ -603,7 +634,7 @@ header{
 
     height: 50px;
     border-bottom: 3px solid white;
-    margin: 2% 0;
+    margin: 0;
 
 
 
@@ -654,8 +685,10 @@ header{
     }
 
     #three{
+      min-width: 0;
       #tabs{
-
+        min-width: 0;
+        width: 100%;
         margin: 0;
 
         ul{
@@ -679,6 +712,15 @@ header{
           }
         }
 
+        .mobile-tabs{
+          min-width: 0;
+          //width: 320px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width:100%;
+        }
         .tab{
           margin: 0;
           height:150px;
@@ -686,6 +728,8 @@ header{
           border: 1px solid transparent;
           border-top: 1px solid #353535;
           border-bottom: 1px solid #353535;
+          min-width: 0;
+          width: 90%;
 
           .txt-box{
             //margin-left: 25px;
